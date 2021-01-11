@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
+p.p2 {
+  padding: 35px;
 
+}
 #wrapper {
   max-width: 1520px;
   background-color: black;
@@ -10,12 +13,21 @@
   flex-wrap: wrap;
 }
 
-#mcontent {
+#mcontent1 {
+  flex: 1;
+  background-color: #BFE8F0;
+  min-height: 300px;
+  max-width:300px;
+  border-width:5px;  
+  border-style:none;
+}
+
+#mcontent2 {
   flex: 1;
   background-color: #BFE8F0;
   min-height: 160px;
   border-width:5px;  
-  border-style:double;
+  border-style:none;
 }
 
 #rscontent, #lscontent {
@@ -57,8 +69,8 @@
     <h4><i>Servicing the North Georgia/Chattanooga Area</i></h4>
   </div>
   <div id="lscontent"></div>
-  <div id="mcontent">
-    <p>
+  <div id="mcontent1">
+    <p class="p1">
 			<ul>
 			<h3>Commercial and Residential Services</h3>
 			<li>Water Heaters</li>
@@ -67,6 +79,9 @@
 			<li>Retrofit Fixtures, Repair Leaks</li>
 		</p>
   </div>
+  <div id="mcontent2">       <p class="p2">
+  <img src="C:\Users\angie\OneDrive\Documents\GitHub\adamplumbs.github.io\logo.jpg" alt="Adam's Plumbing Service Logo">
+  </p></div>
   <div id="rscontent"></div>
 </div>
 <div id="content">
