@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+  .wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+    width: 960px;
+}
+nav, section {
+  float: left;
+}
+nav {
+  width: 200px;
+  margin-right: 10px;
+}
+section {
+  width: 750px;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #2980b9;
+  color: #FFF;
+  font-family: Helvetica;
+  text-align: center;
+  margin: 0;
+}
+header,
+nav,
+section {
+  border: 1px solid rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+header {
+  padding: 20px 0;
+}
+nav, section {
+  padding: 200px 0;
+}
+</style>
+<head>
+  <title>CSS and HTML Page Layout</title>
+</head>
 <body>
-	<center>
-	<h1>Adam's Plumbing Services</h1>
-	</center>
-	<center>
-	<h4><i>From leaky drains to rattling pipes, don't sweat the small stuff!</i></h4>
-	</center>
-	<center>
-	<p>Over 20 years experience in commercial and residential plumbing fixtures, fixes, and installs.</p>
-	</center>
-
+  <div class="wrapper">
+  <h1>Adam's Plumbing Services</h1>
+  <header>"Over 20 years experience in fixtures, fixes, and installs!"</header>
+  <nav>NAV</nav>
+  <section>SECTION</section>
+</div>
 </body>
 
 <footer>
 	<center>
-	<h3> Call or Email: <a href="tel:+14043950358">(423) 596-8439</a> | <a href="mailto:achupaska@gmail">achupaska@gmail.com</a> <h3>
+	<h3> Call or Email: <a href="tel:423-596-8439">(423) 596-8439</a> | <a href="mailto:achupaska@gmail">achupaska@gmail.com</a> <h3>
 
 </footer>
-
 </html>
