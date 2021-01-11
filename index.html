@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
-  .wrapper {
-  width: 960px;
-  margin: 0 auto;
+
+#wrapper {
+  max-width: 1520px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-header {
-    width: 960px;
+
+#mcontent {
+  flex: 1;
+  background-color: #BFE8F0;
+  min-height: 500px;
+  border-width:5px;  
+    border-style:outset;
 }
-nav, section {
-  float: left;
+
+#rscontent, #lscontent {
+  max-width: 300px;
+  min-width: 200px;
+  background-color: white;
+
 }
-nav {
-  width: 200px;
-  margin-right: 10px;
-}
-section {
-  width: 750px;
-}
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  background: #BFE8F0;
-  color: #000000;
-  font-family: Helvetica;
+
+#content {
+  flex: 0 0 100%;
+  min-height: 160px;
   text-align: center;
-  margin: 0;
+  background-color: #ffffff;
 }
-header,
-nav,
-section {
-  border: 1px solid rgba(255,255,255,0.8);
-  margin-bottom: 10px;
-  border-radius: 3px;
-}
-header {
-  padding: 20px 0;
-}
-nav, section {
-  padding: 200px 0;
+
+#content > h2 {
+  color:#000000;
 }
 </style>
-<head>
-  <title>Adam Plumbs</title>
-</head>
-<body>
-  <div class="wrapper">
-  <h1>Adam's Plumbing Services</h1>
-  <header>Call: <a href="tel:423-596-8439">(423) 596-8439</a> | E-Mail: <a href="mailto:achupaska@gmail.com">achupaska@gmail.com</a></header>
- 	<nav>
-		<p>Commercial and Residential Services, Water Heaters, Toilets, Faucets, Hose Bibbs, & Showers, Retrofit Fixtures, Repair Leaks</p>
-	</nav>
-  <section>SECTION</section>
+<div id="wrapper"> 
+  <div id="content">
+    <h1><u>Adam's Plumbing Service</u></h1>
+    <p>Call: <a href="tel:423-596-8439">(423) 596-8439</a> | E-Mail: <a href="mailto:achupaska@gmail.com">achupaska@gmail.com</a></p>
+    <h4><i>'Commercial & Residential Repairs, Installations, & Retrofittings'</i></h4>
+  </div>
+  <div id="rscontent"></div>
+  <div id="mcontent">
+    <h2 style="color:black;"><p>
+			<ul>
+			<li>Commercial and Residential Services</li> 
+			<li>Water Heaters</li>
+			<li>Toilets & Showers </li>
+			<li>Faucets & Hose Bibbs</li>
+			<li>Retrofit Fixtures, Repair Leaks</li>
+		</p></h2>
+  </div>
+  <div id="lscontent"></div>
 </div>
-</body>
-</html>
